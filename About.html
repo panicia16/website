@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/feather-icons@4.29.2/dist/feather.min.js"></script>
+  <title>About Us - Lifestyle Vibes</title>
+  <style>
+    .about-section {
+      background: url('https://images.unsplash.com/photo-1556761175-4b46a572b786') no-repeat center center;
+      background-size: cover;
+      color: white;
+      padding: 100px 0;
+      text-align: center;
+    }
+    .about-content {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 50px;
+      border-radius: 10px;
+    }
+    .team-member img {
+      border-radius: 50%;
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+    }
+    .btn {
+        transition: background-color 0.3s;
+        border-radius: 10px;
+    }
+    .btn:hover {
+      background-color: #0056b3;
+      color: #fff;
+    }
+  </style>
+</head>
+<body class="bg-dark">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-secondary navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold fs-5">Lifestyle Vibes</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="website.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="About.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="contactus.html">Contact Us</a></li>
+        </ul>
+        <form class="d-flex ml-2" role="search">
+            <a href="#subscriptionForm" class="btn btn-outline-black btn-light">Follow</a>
+        </form>
+        <a href="register.html" class="ms-3 text-white" title="Profile">
+            <i data-feather="user" class="icon-profile"></i>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Us Section -->
+  <section class="about-section">
+    <div class="container">
+      <div class="about-content">
+        <h1 class="fw-bold mb-4">About Us</h1>
+        <p class="lead mb-4">
+          Welcome to <strong>Lifestyle Vibes</strong>, where we aim to inspire you in all things lifestyle and wellness. From health tips to the latest trends, we bring content that helps you live a balanced, fulfilled life.
+        </p>
+        <p class="mb-4">
+          Our team is passionate about guiding you through your wellness journey, whether it’s physical health, mental clarity, or personal style. Join us as we explore the best ways to elevate everyday life.
+        </p>
+        
+        <!-- Vision and Mission -->
+        <h2 class="fw-bold mb-3">Our Vision</h2>
+        <p class="mb-4">"To be a leading platform that inspires and empowers individuals to live a vibrant and balanced lifestyle through wellness, creativity, and community engagement."</p>
+        
+        <h2 class="fw-bold mb-3">Our Mission</h2>
+        <ul class="list-unstyled">
+            <li><strong>1.</strong> Providing valuable and high-quality content about health and lifestyle.</li>
+            <li><strong>2.</strong> Connecting the community through various platforms to share knowledge and experiences.</li>
+            <li><strong>3.</strong> Offering support and motivation for individuals on their journey towards health and happiness.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="container mt-5">
+    <h2 class="text-center fw-bold mb-5 text-white">Meet Our Team</h2>
+    <div class="row text-center">
+      <div class="col-md-4">
+        <div class="team-member mb-4">
+          <img src="https://i.pinimg.com/236x/01/e8/35/01e835934699e3c6b4056d35e49c2be4.jpg" alt="Ju Jingyi" class="img-fluid rounded-circle mb-3">
+          <h5 class="fw-bold text-white">Ju Jing Yi</h5>
+          <p class="text-light">Content Specialist</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="team-member mb-4">
+          <img src="https://i.pinimg.com/564x/5f/69/a1/5f69a10847ed066c4e9fa509b42ce985.jpg" alt="Dilabra Dilmurat" class="img-fluid rounded-circle mb-3">
+          <h5 class="fw-bold text-white">Dilabra Dilmurat</h5>
+          <p class="text-light">Marketing & PR</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="team-member mb-4">
+          <img src="https://i.pinimg.com/564x/eb/20/21/eb2021b1b85cefa88bf6b45107e11950.jpg" alt="Zhou Lu Si" class="img-fluid rounded-circle mb-3">
+          <h5 class="fw-bold text-white">Zhou Lu Si</h5>
+          <p class="text-light">Designer</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- form -->
+  <section class="container text-center mt-5 mb-5" id="subscriptionForm">
+    <div class="p-5 bg-secondary text-white rounded">
+        <h5 class="card-title fw-bold">Join Our Community</h5>
+        <p class="card-text">Follow for the latest lifestyle updates</p>
+
+        <form id="subscriptionFormForm">
+            <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control" id="username" aria-describedby="usernameHelp">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text text-white">We'll never share your email with anyone else.</div>
+            </div>
+            <button type="submit" class="btn btn-primary">Follow</button>
+        </form>
+    </div>
+  </section>
+
+    <footer class="mt-5 bg-secondary text-center p-3">
+      <p class="mb-0">&copy; 2024 Lifestyle Vibes. All Rights Reserved.</p>
+      <div class="mt-2">
+          <a href="https://www.facebook.com/login" class="text-white me-2"><i data-feather="facebook"></i></a>
+          <a href="https://x.com/" class="text-light me-2"><i data-feather="twitter"></i></a>
+          <a href="https://www.instagram.com/" class="text-light me-2"><i data-feather="instagram"></i></a>
+      </div>
+    </footer>
+
+
+  <script>
+        document.getElementById('subscriptionFormForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const username = document.getElementById('username').value;
+            const email = document.getElementById('email').value;
+
+            // Validasi username
+            const usernameRegex = /^[A-Za-z0-9_]+$/; //hanya boleh huruf, angka, dan underscore
+            if (!username && !email) {
+                alert('Please enter both username and email!');
+                return; 
+            } else if (!username) {
+                alert('Please enter a username!');
+                return; 
+            } else if (!usernameRegex.test(username)) {
+                alert('Username must only contain letters, numbers, and underscores without spaces or special characters.');
+                return; 
+            }
+
+            // Validasi email
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; //cek format email
+            if (!email) {
+                alert('Email cannot be empty!');
+                return; 
+            } else if (!emailRegex.test(email)) {
+                alert('Please enter a valid email address.');
+                return;
+            }
+
+            alert('Follow successfully!'); 
+        });
+
+        feather.replace();
+    </script>
+</body>
+</html>
